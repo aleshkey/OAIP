@@ -1,0 +1,5 @@
+﻿  ConsoleApplication45.cpp
+c:\users\user\source\repos\consoleapplication45\consoleapplication45\consoleapplication45.cpp(11): error C2065: ifstream: необъявленный идентификатор
+c:\users\user\source\repos\consoleapplication45\consoleapplication45\consoleapplication45.cpp(11): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "fin"
+c:\users\user\source\repos\consoleapplication45\consoleapplication45\consoleapplication45.cpp(11): error C2065: fin: необъявленный идентификатор
+c:\users\user\source\repos\consoleapplication45\consoleapplication45\consoleapplication45.cpp(11): error C2065: input: необъявленный идентификатор

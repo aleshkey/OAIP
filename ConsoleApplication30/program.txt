@@ -1,0 +1,87 @@
+// ConsoleApplication30.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+//
+
+#include <iostream>
+#include <vector>
+#include <queue>
+
+using namespace std;
+
+
+int main()
+{
+	int n, m, k;
+	double a, b;
+	cin >> n >> m >> k >> a >> b;
+	vector <int> people(k);
+	vector <int> C(m);
+	vector <int> D(m);
+	vector < vector<int> > g(n);
+	int s;
+	queue<int> q;
+	
+	//cout << 1;
+	vector<bool> used(n);
+	//cout << 2;
+	vector<int> d(n);
+	vector<int> p(n);
+	
+	
+	for (int i = 0; i < k; i++) {
+		cin >> people[i];
+	}
+
+	for (int j = 0; j < m; j++) {
+		cin >> C[j];
+		cin >> D[j];
+	}
+	for (int i = 0; i < m; i++) {
+		int x = C[i] - 1;
+		int y = D[i] - 1;
+		g[x].push_back(y);
+		g[y].push_back(x);
+	}
+	for (int i = 0; i < k; i++) {
+		s = people[i]-1;
+		used[s] = true;
+		p[s] = -1;
+		q.push(s);
+		while (!q.empty()) {
+			int v = q.front();
+			q.pop();
+			for (size_t i = 0; i < g[v].size(); ++i) {
+				int to = g[v][i];
+				if (!used[to]) {
+					used[to] = true;
+					q.push(to);
+					d[to] = d[v] + 1;
+					p[to] = v;
+				}
+			}
+		}
+		int to = 0;
+		if (!used[to])
+			cout << "No path!";
+		else {
+			vector<int> path;
+			for (int v = to; v != -1; v = p[v])
+				path.push_back(v);
+			reverse(path.begin(), path.end());
+			cout << "Path: ";
+			for (size_t i = 0; i < path.size(); ++i)
+				cout << path[i] + 1 << " ";
+			cout << endl;
+		}
+	}
+}
+
+// Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
+// Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
+
+// Советы по началу работы 
+//   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
+//   2. В окне Team Explorer можно подключиться к системе управления версиями.
+//   3. В окне "Выходные данные" можно просматривать выходные данные сборки и другие сообщения.
+//   4. В окне "Список ошибок" можно просматривать ошибки.
+//   5. Последовательно выберите пункты меню "Проект" > "Добавить новый элемент", чтобы создать файлы кода, или "Проект" > "Добавить существующий элемент", чтобы добавить в проект существующие файлы кода.
+//   6. Чтобы снова открыть этот проект позже, выберите пункты меню "Файл" > "Открыть" > "Проект" и выберите SLN-файл.

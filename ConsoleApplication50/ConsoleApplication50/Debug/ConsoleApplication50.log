@@ -1,0 +1,5 @@
+﻿  ConsoleApplication50.cpp
+c:\users\user\source\repos\consoleapplication50\consoleapplication50\consoleapplication50.cpp(25): warning C4305: +=: усечение из "double" в "float"
+c:\users\user\source\repos\consoleapplication50\consoleapplication50\consoleapplication50.cpp(27): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+c:\users\user\source\repos\consoleapplication50\consoleapplication50\consoleapplication50.cpp(28): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  ConsoleApplication50.vcxproj -> C:\Users\User\source\repos\ConsoleApplication50\Debug\ConsoleApplication50.exe

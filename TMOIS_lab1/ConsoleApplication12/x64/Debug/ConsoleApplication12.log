@@ -1,0 +1,5 @@
+﻿  ConsoleApplication12.cpp
+c:\users\user\source\repos\tmois_lab1\consoleapplication12\consoleapplication12.cpp(37): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\user\source\repos\tmois_lab1\consoleapplication12\consoleapplication12.cpp(54): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\user\source\repos\tmois_lab1\consoleapplication12\consoleapplication12.cpp(66): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\user\source\repos\tmois_lab1\consoleapplication12\consoleapplication12.cpp(5): fatal error C1075: "{": не найдена несоответствующая лексема

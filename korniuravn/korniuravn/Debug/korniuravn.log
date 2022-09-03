@@ -1,0 +1,6 @@
+﻿  korniuravn.cpp
+c:\users\user\source\repos\korniuravn\korniuravn\korniuravn.cpp(9): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\source\repos\korniuravn\korniuravn\korniuravn.cpp(51): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\source\repos\korniuravn\korniuravn\korniuravn.cpp(38): warning C4101: temp: неиспользованная локальная переменная
+c:\users\user\source\repos\korniuravn\korniuravn\korniuravn.cpp(49): warning C4101: ex: неиспользованная локальная переменная
+  korniuravn.vcxproj -> C:\Users\User\source\repos\korniuravn\Debug\korniuravn.exe

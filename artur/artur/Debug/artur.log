@@ -1,0 +1,4 @@
+﻿  artur.cpp
+c:\users\user\source\repos\artur\artur\artur.cpp(17): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\source\repos\artur\artur\artur.cpp(22): warning C4018: <: несоответствие типов со знаком и без знака
+  artur.vcxproj -> c:\Users\User\source\repos\artur\Debug\artur.exe

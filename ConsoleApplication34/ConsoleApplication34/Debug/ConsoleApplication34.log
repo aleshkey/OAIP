@@ -1,0 +1,4 @@
+﻿  ConsoleApplication34.cpp
+c:\users\user\source\repos\consoleapplication34\consoleapplication34\consoleapplication34.cpp(41): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+c:\users\user\source\repos\consoleapplication34\consoleapplication34\consoleapplication34.cpp(29): warning C4101: nach: неиспользованная локальная переменная
+  ConsoleApplication34.vcxproj -> C:\Users\User\source\repos\ConsoleApplication34\Debug\ConsoleApplication34.exe

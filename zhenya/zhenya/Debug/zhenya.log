@@ -1,0 +1,6 @@
+﻿  Lib.cpp
+  zhenya.cpp
+  Создание кода...
+zhenya.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall Lib<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >::Show(void)" (?Show@?$Lib@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@QAEXXZ) в функции _main
+zhenya.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __thiscall Lib<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >::SetCount(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?SetCount@?$Lib@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) в функции _main
+C:\Users\User\source\repos\zhenya\Debug\zhenya.exe : fatal error LNK1120: неразрешенных внешних элементов: 2

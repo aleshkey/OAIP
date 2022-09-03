@@ -1,0 +1,4 @@
+﻿  tree.cpp
+c:\users\user\source\repos\tree\tree\tree.cpp(99): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\user\source\repos\tree\tree\tree.cpp(160): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+c:\users\user\source\repos\tree\tree\tree.cpp(164): error C2059: синтаксическая ошибка: ,

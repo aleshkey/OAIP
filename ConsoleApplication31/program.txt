@@ -1,0 +1,69 @@
+ ConsoleApplication31.cpp  Этот файл содержит функцию main. Здесь начинается и заканчивается выполнение программы.
+
+#include vector
+#include iostream
+#include fstream
+using namespace std;
+int dfs(int counter, int current, vectorvectorint list) {
+	int min;
+	for (int i = 0; i  list[current].size(); i++) {
+		counter++;
+		min = INT_MAX;
+		if (list[current][i] == 0) {
+			return counter + 1;
+		}
+		else {
+			int a = dfs(counter, i, list);
+			if (amin){
+				min = a;
+			}
+		}
+	}
+	return min;
+}
+int main()
+{
+	int x, nach, obhvat = 1;
+	vectorint k;
+	vectorint cycle;
+	ifstream fin; fin.open(input.txt);
+	if (fin.is_open()) {
+		while (!fin.eof()) {
+			fin  x;
+			k.push_back(x);
+		}
+	}
+	x = k.size();
+	int q = 0;
+	int n = round(sqrt(x));
+	vectorint b(n);
+	vectorvectorint a(n);
+	vectorvectorint g(n);
+	for (int i = 0; i  n; i++) {
+		for (int j = 0; j  n; j++) {
+			a[i].push_back(k[q]);
+			q++;
+		}
+	}
+	for (int i = 0; i  n; i++) {
+		for (int j = 0; j  n; j++) {
+			if (a[i][j] == 1) {
+				g[i].push_back(j);
+			}
+		}
+	}
+	int counter = 0, current = 0;
+	int answer = dfs(counter, current, g);
+	cout  answer;
+}
+
+ Запуск программы CTRL+F5 или меню Отладка  Запуск без отладки
+ Отладка программы F5 или меню Отладка  Запустить отладку
+
+ Советы по началу работы 
+   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
+   2. В окне Team Explorer можно подключиться к системе управления версиями.
+   3. В окне Выходные данные можно просматривать выходные данные сборки и другие сообщения.
+   4. В окне Список ошибок можно просматривать ошибки.
+   5. Последовательно выберите пункты меню Проект  Добавить новый элемент, чтобы создать файлы кода, или Проект  Добавить существующий элемент, чтобы добавить в проект существующие файлы кода.
+   6. Чтобы снова открыть этот проект позже, выберите пункты меню Файл  Открыть  Проект и выберите SLN-файл.

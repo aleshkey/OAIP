@@ -1,0 +1,4 @@
+﻿  ConsoleApplication35.cpp
+c:\users\user\source\repos\consoleapplication35\consoleapplication35\consoleapplication35.cpp(11): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\user\source\repos\consoleapplication35\consoleapplication35\consoleapplication35.cpp(9): warning C4101: now: неиспользованная локальная переменная
+  ConsoleApplication35.vcxproj -> C:\Users\User\source\repos\ConsoleApplication35\Debug\ConsoleApplication35.exe

@@ -1,0 +1,4 @@
+﻿  ConsoleApplication48.cpp
+c:\users\user\source\repos\consoleapplication48\consoleapplication48\consoleapplication48.cpp(357): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\user\source\repos\consoleapplication48\consoleapplication48\consoleapplication48.cpp(270): warning C4715: welcomePrompt: значение возвращается не при всех путях выполнения
+  ConsoleApplication48.vcxproj -> C:\Users\User\source\repos\ConsoleApplication48\Debug\ConsoleApplication48.exe

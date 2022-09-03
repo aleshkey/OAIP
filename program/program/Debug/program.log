@@ -1,0 +1,8 @@
+﻿  twodimensional_array.cpp
+c:\users\user\source\repos\program\program\twodimensional_array.cpp(10): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\source\repos\program\program\twodimensional_array.cpp(119): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\source\repos\program\program\twodimensional_array.cpp(130): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\source\repos\program\program\twodimensional_array.cpp(131): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\source\repos\program\program\twodimensional_array.cpp(155): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\source\repos\program\program\twodimensional_array.cpp(156): warning C4018: <: несоответствие типов со знаком и без знака
+  program.vcxproj -> C:\Users\User\source\repos\program\Debug\program.exe

@@ -1,0 +1,5 @@
+﻿  rr2.cpp
+c:\users\user\source\repos\rr2\rr2\rr2.cpp(17): warning C4305: аргумент: усечение из "int" в "bool"
+c:\users\user\source\repos\rr2\rr2\rr2.cpp(35): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+c:\users\user\source\repos\rr2\rr2\rr2.cpp(53): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\user\source\repos\rr2\rr2\rr2.cpp(60): error C4700: использована неинициализированная локальная переменная "cycle"

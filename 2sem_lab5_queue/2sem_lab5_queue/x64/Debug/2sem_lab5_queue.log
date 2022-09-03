@@ -1,0 +1,8 @@
+﻿  2sem_lab5_queue.cpp
+c:\users\user\source\repos\2sem_lab5_queue\2sem_lab5_queue\2sem_lab5_queue.cpp(46): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\user\source\repos\2sem_lab5_queue\2sem_lab5_queue\2sem_lab5_queue.cpp(57): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\user\source\repos\2sem_lab5_queue\2sem_lab5_queue\2sem_lab5_queue.cpp(71): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\user\source\repos\2sem_lab5_queue\2sem_lab5_queue\2sem_lab5_queue.cpp(83): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\user\source\repos\2sem_lab5_queue\2sem_lab5_queue\2sem_lab5_queue.cpp(95): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\user\source\repos\2sem_lab5_queue\2sem_lab5_queue\2sem_lab5_queue.cpp(125): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  2sem_lab5_queue.vcxproj -> C:\Users\User\source\repos\2sem_lab5_queue\x64\Debug\2sem_lab5_queue.exe

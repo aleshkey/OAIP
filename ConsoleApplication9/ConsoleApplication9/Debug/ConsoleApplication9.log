@@ -1,0 +1,17 @@
+﻿  ConsoleApplication9.cpp
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(18): error C3873: "0xbb": этот символ недопустим как первый символ идентификатора
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(18): error C2065: cin: необъявленный идентификатор
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(18): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "»"
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(18): error C2065: »: необъявленный идентификатор
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(18): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "a"
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(18): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "b"
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(18): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "h"
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(18): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "n"
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(28): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(28): error C2065: cout: необъявленный идентификатор
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(28): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(28): error C2065: «: необъявленный идентификатор
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(28): error C2143: синтаксическая ошибка: отсутствие ";" перед "строка"
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(28): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "x"
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(28): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "y"
+c:\users\user\source\repos\consoleapplication9\consoleapplication9\consoleapplication9.cpp(28): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "sum"

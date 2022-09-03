@@ -1,0 +1,3 @@
+﻿  ConsoleApplication36.cpp
+c:\users\user\source\repos\consoleapplication36\consoleapplication36\consoleapplication36.cpp(12): warning C4091: : пропускается слева от "double", когда ни одна переменная не объявлена
+  ConsoleApplication36.vcxproj -> C:\Users\User\source\repos\ConsoleApplication36\Debug\ConsoleApplication36.exe

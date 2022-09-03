@@ -1,0 +1,197 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <fstream>
+#include <cstdlib>
+#include "devide_into_words.h"
+#include "addition.h"
+using namespace std;
+struct Marks {
+	string physics;
+	string math;
+	string IT;
+	string chemistry;
+};
+struct Student {
+	string name;
+	string year;
+	string group;
+	Marks marks;
+	string average_score;
+};
+void GetData(Student *student, vector<string> words, int i) {
+	if (words.size() == 8) {
+		student[i].name = words[0];
+		student[i].year = words[1];
+		student[i].group = words[2];
+		student[i].marks.physics = words[3];
+		student[i].marks.math = words[4];
+		student[i].marks.IT = words[5];
+		student[i].marks.chemistry = words[6];
+		student[i].average_score = words[7];
+	}
+}
+void ShowData(Student student, string fname) {
+	ofstream fout;
+	fout.open(fname, ios::app);
+	fout << student.name << "\t" << student.year << "\t" << student.group << "\t" << student.marks.physics << "\t" << student.marks.math << "\t" << student.marks.IT << "\t" << student.marks.chemistry << "\t" << student.average_score << endl;
+	fout.close();
+}
+/*void ChangingData(string path) {
+	int strings;
+	ifstream fin(path);
+	string str;
+	int  n;
+	Student *student;
+	cout << "какую строку хотите заменить?\n";
+	cin >> n;
+	n--;
+	cout << "введите новые данные\n";
+	getline(cin, str);
+	if (fin.is_open()) {
+		system("cls");
+		while (!fin.eof()) {
+			string buffer;
+			getline(fin, buffer);
+			strings++;
+		}
+		Student *student;
+		student = new Student[strings];
+		fin.clear();
+		fin.seekg(0);
+		for (int i=0; i<strings;i++){
+			if (i != n) {
+				string buffer;
+				getline(fin, buffer);
+				vector<string> words = Devide_into_words(buffer);
+				GetData(student, words, i);
+			}
+		}
+	}
+	fin.close();
+	remove(path.c_str());
+	ofstream fout(path);
+	for (int i = 0; i < strings; i++) {
+		if (i == n) {
+			fout << str<<endl;
+		}
+		else{
+			if (i == strings) {
+				fout << student[i].name << "\t" << student[i].year << "\t" << student[i].group << "\t" << student[i].marks.physics << "\t" << student[i].marks.math << "\t" << student[i].marks.IT << "\t" << student[i].marks.chemistry << "\t" << student[i].average_score;
+			}
+			else {
+				ShowData(student[i],"input.txt");
+			}
+		}
+	}
+	fout.close();
+}*/
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	int menu;
+	string path="input.txt";
+	int strings = 0;
+	string repeat="yes";
+	while (repeat != "no") {
+		system("cls");
+		cout << "1) Создание\n2)Просмотр\n3)Коррекция\n4)Решение индивидуального задания\n";
+		cin >> menu;
+		switch (menu) {
+		case 1: {
+			/*system("cls");
+			cout << "введите название файла\n";
+			string buffer;
+			cin >> buffer;
+			path = buffer;
+			ofstream fout(path);
+			fout.close();*/
+			break;
+		}
+		case 2: {
+			/*ifstream fin(path);
+			if (fin.is_open()) {
+				system("cls");
+				while (!fin.eof()) {
+					string buffer;
+					getline(fin, buffer);
+					strings++;
+				}
+				fin.clear();
+				fin.seekg(0);
+				Student *student;
+				student = new Student[strings];
+				int i = 0;
+				while (!fin.eof()) {
+					string buffer;
+					getline(fin, buffer);
+					vector<string> words = Devide_into_words(buffer);
+					GetData(student, words, i);
+					i++;
+				}
+				for (i = 0; i < strings; i++) {
+					cout.width(8);
+					cout << student[i].name << "\t" << student[i].year << "\t" << student[i].group << "\t" << student[i].marks.physics << "\t" << student[i].marks.math << "\t" << student[i].marks.IT << "\t" << student[i].marks.chemistry << "\t" << student[i].average_score << endl;
+				}
+			}
+			else cout << "file is not open";
+			fin.close();*/
+			break;
+		}
+		case 3: {
+			/*system("cls");
+			cout << "1)Изменить данные\n2)Добавить данные\n";
+			int kod;
+			cin >> kod;
+			if (kod == 2) {
+				cout << "введите строку, которую хотите добавить";
+				addition(path);
+			}
+			else {
+				if (kod == 1) {
+					//ChangingData(path);
+				}
+			}*/
+			break;
+		}
+		case 4: {
+			/*ifstream fin(path);
+			if (fin.is_open()) {
+				system("cls");
+				while (!fin.eof()) {
+					string buffer;
+					getline(fin, buffer);
+					strings++;
+				}
+				fin.clear();
+				fin.seekg(0);
+				Student *student;
+				student = new Student[strings];
+				int i = 0;
+				while (!fin.eof()) {
+					string buffer;
+					getline(fin, buffer);
+					vector<string> words = Devide_into_words(buffer);
+					GetData(student, words, i);
+					i++;
+				}
+				for (i = 0; i < strings; i++) {
+					if (student[i].name[0] == 'A' && (student[i].marks.math[0] == '9' || student[i].marks.math[0] == '8')) {
+						ShowData(student[i],"output.txt");
+					}
+				}
+				delete[]student;
+				cout << "Ответ в файле output.txt\n";
+			}
+			else cout << "file is not open\n";
+			fin.close();*/
+		}
+				cout << "хотите провести ещё одну операцию?(yes/no)\n";
+				string buffer;
+				cin >> buffer;
+				repeat = buffer;
+
+		}
+	}
+	return 0;
+}

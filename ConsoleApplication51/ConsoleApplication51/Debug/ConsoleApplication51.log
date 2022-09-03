@@ -1,0 +1,5 @@
+﻿  ConsoleApplication51.cpp
+  tree.cpp
+c:\users\user\source\repos\consoleapplication51\consoleapplication51\tree.cpp(1): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  Создание кода...
+  ConsoleApplication51.vcxproj -> C:\Users\User\source\repos\ConsoleApplication51\Debug\ConsoleApplication51.exe

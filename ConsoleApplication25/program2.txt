@@ -1,0 +1,148 @@
+#include <iostream>
+#include <vector>
+#include <fstream>
+using namespace std;
+vector<int> cl;
+vector<int> p;
+int cycle_st, cycle_end;
+
+bool dfs(int v, vector <vector<int>> g) {
+		cl[v] = 1;
+		for (size_t i = 0; i < g[v].size(); ++i) {
+			int to = g[v][i];
+			if (cl[to] == 0) {
+				p[to] = v;
+				if (dfs(to, g))  return true;
+			}
+			else if (cl[to] == 1) {
+				cycle_end = v;
+				cycle_st = to;
+				return true;
+			}
+		}
+		cl[v] = 2;
+		return false;
+}
+
+bool dfs2(int v, vector <vector<int>> g) {
+	cl[v] = 1;
+	//cout << 1;
+	for (int i = g[v].size()-1; i>=0; i--) {
+		int to = g[v][i];
+		if (cl[to] == 0) {
+			p[to] = v;
+			if (dfs2(to, g))  return true;
+		}
+		else if (cl[to] == 1) {
+			cycle_end = v;
+			cycle_st = to;
+			return true;
+		}
+	}
+	cl[v] = 2;
+	return false;
+}
+
+int main() {
+	int x, nach, obhvat =1;
+	vector<int> k;
+	vector<int> cycle;
+	ifstream fin; fin.open("input.txt");
+	if (fin.is_open()) {
+		while (!fin.eof()) {
+			fin >> x;
+			k.push_back(x);
+		}
+	}
+	x = k.size();
+	int q = 0;
+	int n = round(sqrt(x));
+	vector<int> b(n);
+	vector<vector<int>> a(n);
+	vector<vector<int>> g(n);
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			a[i].push_back(k[q]);
+			q++;
+		}
+	}
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cout << a[i][j] << " \t";
+		}
+		cout << endl;
+	}
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if (a[i][j] == 1) {
+				g[i].push_back(j);
+			}
+		}
+	}
+	
+	for (int i = 0; i < n; i++) {
+		p.assign(n, -1);
+		cl.assign(n, 0);
+		cycle_st = -1;
+		if (dfs(i, g)) {
+			cycle.push_back(cycle_st);
+			//cout << " " << i << " ";
+			for (int v = cycle_end; v != cycle_st; v = p[v])
+				cycle.push_back(v);
+			//cout << "a"<<" ";
+			cycle.push_back(cycle_st);
+			reverse(cycle.begin(), cycle.end());
+			
+			for (size_t i = 0; i < cycle.size(); i++)
+				printf("%d ", cycle[i]);
+			cout << endl;
+			x = cycle.size()-1;
+			//cout << x;
+			b.push_back(x);
+			cycle.clear();
+			p.clear();
+		}
+	}
+	cout << endl;
+	for (int i = 0; i < n; i++) {
+		p.assign(n, -1);
+		cl.assign(n, 0);
+		cycle_st = -1;
+		//cout << 1;
+		if (dfs2(i, g)) {
+			cycle.push_back(cycle_st);
+			//cout << " " << i << " ";
+			for (int v = cycle_end; v != cycle_st; v = p[v])
+				cycle.push_back(v);
+			//cout << "a"<<" ";
+			cycle.push_back(cycle_st);
+			reverse(cycle.begin(), cycle.end());
+
+			for (size_t i = 0; i < cycle.size(); i++)
+				printf("%d ", cycle[i]);
+			cout << endl;
+			x = cycle.size() - 1;
+			//cout << x;
+			b.push_back(x);
+			cycle.clear();
+			p.clear();
+		
+		}
+	}
+	//cout << 2;
+		if (cycle_st == -1)
+			puts("Acyclic");
+		else {
+			//cout << " else";
+			nach = INT_MAX;
+			for (int i = 0; i < b.size(); i++) {
+				if (b[i] < nach && b[i]>=1) {
+					nach = b[i];
+				}
+			}
+			if (nach != INT_MAX) {
+				cout << "\nmin cycle = " << nach;
+			}
+			else cout << "\nmin cycle = 1";
+		}
+}
